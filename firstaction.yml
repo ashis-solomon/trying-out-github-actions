@@ -1,0 +1,13 @@
+name: first-action
+
+on:
+  schedule: 
+    - cron: '* * * * *'
+  workflow_dispatch:
+
+jobs:
+  my-job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: first-step
+        run: echo "Hello World"
